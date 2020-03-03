@@ -79,7 +79,7 @@ data= req.body;
 // ----CUSTOM CODE ENDS HERE----
 
 // Set the Access Token
-const accessToken = 'EAAAEP69-udQvtYKqwsJNAslyB_p0_uq_eBcWhUGk8fvRB476vFKp3419e6t_meo';
+const accessToken = 'EAAAEMa60hdxtgqXY6B5EWIQnOIbziybYN-3jlkVfVZLlciWPOo86rgnnxS303Dj';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -95,7 +95,7 @@ oauth2.accessToken = accessToken;
 // Set 'basePath' to switch between sandbox env and production env
 // sandbox: https://connect.squareupsandbox.com
 // production: https://connect.squareup.com
-defaultClient.basePath = 'https://connect.squareupsandbox.com';
+defaultClient.basePath = 'https://connect.squareup.com';
 
 
 app.post('/process-payment', async (req, res) => {
