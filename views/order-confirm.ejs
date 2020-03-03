@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Coding Sandbox - Order Confirmation </title>
+<!-- link to the SqPaymentForm library -->
+<link rel="stylesheet" type="text/css" href="mysqpaymentform.css">
+<script src="server.js"></script>
+<script src="checkoutScript.js"></script>
+
+</head>
+<body onload="getLineItems();">
+<h1>Payment Confirmation</h1>
+<p>Thank you for shopping with us. Please visit us again!</p>
+<p><i>We will contact you soon regarding shipment of your order. Thank You!</i></p>
+<hr>
+
+<h2>Order Details</h2>
+<p id="lineItemsO"></p>
+<p><strong>Order Amount: </strong> <%=data.grandTotal %></p>
+<hr>
+<h3>Customer Information</h3><hr>
+<p><strong>Name:</strong> <%= data.firstName + " " + data.lastName %></p>
+<p><strong>Address: </strong> <%= data.address %></p>
+<p><strong>City: </strong><%= data.city %> <strong>State: </strong>  <%= data.state %>  <strong>Zip Code: </strong> <%= data.zipCode %></p>
+<p><strong>Phone Number: </strong> <%= data.phoneNumber %></p>
+<p><strong>Email Address: </strong> <%= data.emailAddress %></p>
+<p><strong>Confirmation Code: </strong> <%= data.squareCode + data.zipCode %></p>
+
+<button onclick="printPage()">Print Page</button>
+<a href="index.html">Return to Home Page</a>
+
+</body>
+
+</html>

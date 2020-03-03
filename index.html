@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Next Level Up - Online Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://js.squareupsandbox.com/v2/paymentform">
+</script>
+<link rel="stylesheet" type="text/css" href="mysqpaymentform.css">
+  </head>
+  <body onload="startServer(false);">
+<script src="checkoutScript.js"></script>
+<script src="squareScript.js"></script>
+   <script>
+var imgCount = 1; 
+var images = []; 
+
+    images[1] = 'img1.jpg';
+    images[2] = 'img2.jpg';
+    images[3] = 'img3.jpg';
+    images[4] = 'img4.jpg';
+    images[5] = 'img5.jpg';
+    images[6] = 'img6.jpg';
+    images[7] = 'img7.jpg'; 
+	images[8] = 'img8.jpg';
+	images[9] = 'img9.jpg'; 
+	images[10] = 'img10.jpg'; 
+  
+    
+function next_btn(){
+    imgCount = imgCount + 1; 
+    if (imgCount <= 1 || imgCount >= 10){
+        imgCount = 1;
+        }
+    console.log (imgCount);    
+    document.slide.src = images[imgCount];
+}
+        
+function prev_btn(){
+        imgCount = imgCount - 1; 
+        if (imgCount <= 1 || imgCount >= 10){
+            imgCount = 1; 
+        }
+    console.log (imgCount);   
+    document.slide.src = images[imgCount]; 
+    }
+    	
+	
+</script> 
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NEXT LEVEL UP</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Photo Gallery</a></li>
+			<li class="nav-item"><a href="#cart" class="nav-link"> My Cart </a></li>
+          
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item cta"><a href="https://www.instagram.com/nlu_next_level_up/" targe="_blank" class="nav-link"><span>Follow us on Instagram</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+    <!-- <div class="js-fullheight"> -->
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><img src="assets/nlu_webLogo1.png" alt="Next Level Up Logo" width="85%"></h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://www.instagram.com/nlu_next_level_up/" target="_blank" class="btn btn-primary btn-outline-white px-5 py-3">Follow us on Instagram</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-light">
+    <section class="ftco-section-featured ftco-animate">
+      <div class="container-fluid" data-scrollax-parent="true">
+        <div class="row no-gutters d-flex align-items-center" data-scrollax=" properties: { translateY: '-30%'}">
+
+          <div class="col-md-3 mb-3">
+            <a href="#" class="featured-img">
+              <div class="text-1 p-4 d-flex align-items-center">
+                <h3>Lip Gloss<br><span class="tag">collection</span></h3>
+              </div>
+              <img src="assets/lopGlossPic1.jpg" class="img-fluid" alt="Lip Gloss Collection">
+              <div class="text p-4 d-flex align-items-center">
+                <div class="user d-flex align-items-center">
+                
+                  <h3>Glitter - Vanilla Scented <br><span class="position">lipgloss</span></h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="row no-gutters">
+              <div class="col-md-12">
+                <div class="row no-gutters d-flex align-items-end">
+
+                  <div class="col-md-8">
+                    <a href="#" class="featured-img">
+                      <div class="text-1 p-4 d-flex align-items-center">
+                        <h3>Passion<br><span class="tag">lashes & tweezers</span></h3>
+                      </div>
+                      <img src="assets/lashesPic1.jpg" class="img-fluid" alt="">
+                      <div class="text p-4 d-flex align-items-center">
+                        <div class="user d-flex align-items-center">
+                          
+                          <h3>Dont let these lashes "passion" you by!!!</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a href="#" class="featured-img">
+                      <div class="text-1 p-4 d-flex align-items-center">
+                        <h3>Next Level Up <br><span class="tag">lashes</span></h3>
+                      </div>
+                      <img src="assets/nlu_billboardBG.jpg" class="img-fluid" alt="Next Level Up Lashes ">
+                      <div class="text p-4 d-flex align-items-center">
+                        <div class="user d-flex align-items-center">
+                        
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="row no-gutters d-flex align-items-start">
+                  <div class="col-md-8">
+                    <a href="#" class="featured-img">
+                      <div class="text-1 p-4 d-flex align-items-center">
+                        <h3>Next Level Up <br><span class="tag">Online store</span></h3>
+                      </div>
+                      <img src="assets/stopShopPic1.jpg" class="img-fluid" alt="Shop With Next Level Up Today" width="80%">
+                      <div class="text p-4 d-flex align-items-center">
+                        <div class="user d-flex align-items-center">
+                          
+                          <h3>Thanks for stopping by <br><span class="position">Check out our products</span></h3>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="featured-img">
+                      <div class="text-1 p-4 d-flex align-items-center">
+                        <h3>Pink<br><span class="tag">Lash and tweezers collection</span></h3>
+                      </div>
+                      <img src="assets/lashesPic2.jpg" class="img-fluid" alt="Pink Lashes">
+                      <div class="text p-4 d-flex align-items-center">
+                        <div class="user d-flex align-items-center">
+                         
+                          
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#" class="featured-img">
+              <div class="text-1 p-4 d-flex align-items-center">
+                <h3>Hair Pins <br><span class="tag">collection</span></h3>
+              </div>
+              <img src="assets/hairPinsPic1.jpg" class="img-fluid" alt="">
+              <div class="text p-4 d-flex align-items-center">
+                <div class="user d-flex align-items-center">
+                  <h3>Next Level Up - Hair Pins <br><span class="position">For Sale</span></h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+			  <img src="assets/FullSizeRender1.jpeg" alt="You can - Promo" width="50%">
+            <h2 class="h1">The <strong>BIGGER</strong>, the Better. Taking everything <strong>TRENDY</strong> to the <strong>NEXT LEVEL UP</strong></h2>
+            <p><a href="#" class="btn btn-primary mt-3 py-3 px-5">Follow us on Instagram</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    
+  
+    <section class="ftco-section" id="products">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+            <span class="subheading">PRODUCTS</span>
+            <h2 class="mb-4">Lashes - Lip Gloss - Hair Pins</h2>
+            <hr>
+          </div>
+        </div>
+		  <!-- FIRST PRODUCT ROW --> 
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/dainty_1.jpg" alt="Dainty Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Dainty Lashes</h3><p>$10.00</p>
+                <p><input type="number" id="qty1" placeholder="Quantity"><br><button onclick="addDainty();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+			
+			
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/boss_2.jpg" alt="Boss Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Boss Lashes</h3><p>$10.00</p>
+                <p><input type="number" id="qty2" placeholder="Quantity"><br><button onclick="addBoss();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/readyMade_3.jpg"  alt="Ready-Made Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Ready Made Lashes</h3> <p>$10.00</p>
+                <p><input type="number" id="qty3" placeholder="Quantity"><br><button onclick="addReadyMade();">Add to Cart</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			  <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/nlu_tweezers.jpeg" width="75%" height="75%" alt="Dainty Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Tweezers</h3><p>$3.99</p>
+                <p><input type="number" id="qty4" placeholder="Quantity"><br><button onclick="addTweezers();">Add to Cart</button></p>
+              </div>
+           
+		</div>
+			  
+			  <hr>
+			  
+          </div>
+        </div>
+      
+		    
+		<!--SECOND PRODUCT ROW -->
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/3pack_black.jpg" alt="3 Pack of Lashes" height="85%" width="85%"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3pk Lashes - Black </h3><p>$15.00</p>
+                <p><input type="number" id="qty7" placeholder="Quantity"><br><button onclick="add3pB();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+			
+			
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/3pack_gold.jpg" alt="3 Pack of Lashes" height="85%" width="85%"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3pk Lashes - Gold </h3><p>$15.00</p>
+                <p><input type="number" id="qty8" placeholder="Quantity"><br><button onclick="add3pG();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/3pack_neon.jpg"  alt="3 Pack of Lashes" height="85%" width="85%"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3pk Lashes - Neon </h3> <p>$15.00</p>
+                <p><input type="number" id="qty9" placeholder="Quantity"><br><button onclick="add3pN();">Add to Cart</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			  <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/3pack_orange.jpg" height="85%" width="85%" alt="3 Pack of Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3pk Lashes - Orange</h3><p>$15.00</p>
+                <p><input type="number" id="qty10" placeholder="Quantity"><br><button onclick="add3pO();">Add to Cart</button></p>
+              </div>
+           
+		</div>
+			  
+			  <hr>
+			  
+          </div>
+        </div>
+
+		<!--THIRD PRODUCT ROW -->
+		  
+		  <div class="row">  <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			  <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/3pack_pink.jpg" height="85%" width="85%" alt="3 Pack of Lashes"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3pk Lashes - Pink</h3><p>$15.00</p>
+                <p><input type="number" id="qty11" placeholder="Quantity"><br><button onclick="add3pP();">Add to Cart</button></p>
+              </div>
+           
+		</div>
+			  
+			  <hr>
+			  
+          </div>
+			  
+	
+			  
+		
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/lopGlossPic1.jpg" alt="Lip Gloss" height="150px"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Glitter Lip Gloss</h3><p>Vanilla Scented (2 for $5.00) </p>
+                <p><input type="number" id="qty5" placeholder="Quantity"><br><button onclick="addGloss();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+			
+			
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+			 <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><img src="assets/products/hairPinsPic1.jpg" height="250px" alt="Hair Pins" ></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Hair Pins</h3><p>$10.00</p>
+                <p><select id="pins" name="pins">
+                    <option value="BOSS">BOSS</option>
+                    <option value="BABY">BABY</option>
+                    <option value="2020">2020</option>
+                    <option value="LOVE">LOVE</option>
+                    <option value="GIRLS">GIRLS</option>
+                    <option value="SEXY">SEXY</option>
+                    <option value="KISS">KISS</option>
+                    <option value="HAPPY">HAPPY</option>
+                    <option value="DREAM">DREAM</option>
+                </select></p>
+                <p><input type="number" id="qty6" placeholder="Quantity"><br><button onclick="addPins();">Add to Cart</button></p>
+              </div>
+            </div>
+			  
+          </div>
+         
+
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+           
+		
+			  
+			  
+			  
+          </div>
+        </div>
+	
+		
+		
+		
+		
+		
+	</div>
+    </section>
+
+
+
+ 
+
+    <section class="ftco-section testimony-section bg-light" id="cart">
+     <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Next Level Up </span>
+            <h2 class="mb-4">Checkout</h2>
+            <p>Complete the form below, and get your lashes within the next two business days</p>
+          </div>
+        </div>
+   
+		  <table id="liTable">
+  <tr>
+    <th><h3>| Product | </h3></th><th><h3>| Item Price |</h3></th><th><h3>| Qty|</h3> </th><th><h3>|Line Price |</h3></th>
+  </tr>
+  <tr><td><hr></td><td><hr></td><td><hr></td><td><hr></td>
+  </tr>
+
+</table>
+<button onclick="reset();">Clear Cart</button>
+<hr>
+<form method="POST" action="/order-confirm">
+<h3> Sub Total </h3>
+<p id="subTotalO"> </p>
+<h3> Shipping & Handling</h3>
+<p id="shippingCostO"></p>
+<h3>Grand Total</h3>
+<p id="gTotalO"> </p>
+
+<input type="hidden" name="squareCode" id="squareCode">
+<input type="hidden" name="lineItems" id="lineItems"> 
+<input type="hidden" name="grandTotal" id="grandTotal"> 
+ 
+    <div id="shipInfo">
+        <hr>
+    <h2>Customer Shipping Information</h2>
+    <hr>
+    <input id="firstName" class="third" type="text" name="firstName" placeHolder="First Name" required> 
+    <input id="lastName" class="third" type="text" name="lastName" placeholder="Last Name" required><br>
+    <input id="address" class="third" type="text" name="address" placeholder="Address" required> 
+    <input id="city" class="third" type="text" name="city" placeholder="City" required>
+    <input id="state" class="third" type="text" name="state" placeholder="State" required>
+    <input id="zipCode" class="third" type = "text" name="zipCode" placeholder="Zip Code" required> <br>
+    <input id="phoneNumber" class="third" type="tel" name="phoneNumber" placeholder="Phone Number" requried><br> 
+    <input id="emailAddress" class="third" type="email" name="emailAddress" placeholder="Email Address" required> 
+    </div>
+<button class="button-credit-card" type="submit" id="saveTotal" onclick= "startServer(true); saveItems(); paymentForm.build();">Proceed to Checkout </button>
+</form>
+
+<hr>
+<br><br><br><br><br>
+<div id="squareInerface">
+
+    <div id="form-container">
+      <div id="sq-card-number"></div>
+      <div class="third" id="sq-expiration-date"></div>
+      <div class="third" id="sq-cvv"></div>
+      <div class="third" id="sq-postal-code"></div>
+      <button id="sq-apple-pay" class="button-apple-pay"></button>
+      <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Credit/Debit Card Checkout</button>
+    </div>
+																						
+		</div>
+		</div>
+	  </section>  
+    
+	  
+	     <section class="ftco-section" id="gallery">
+      <div class="container">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <hr>
+            <h2 class="mb-4">Photo Gallery</h2>
+            <p>Show off your lashes</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <img src="img1.jpg" alt="Gallery Image" name="slide" width="500px" height="500px">
+           
+			  
+            <div class="text">
+              
+              <h2 class="heading"><a href="portfolio.html">Next Level Up Satisfied customers wearing our lashes</a></h2>
+              <p>Click the navigation buttons below to browse the photo gallery</p>
+              <p><button class="btn btn-primary px-4" onclick="prev_btn();">Previous</button><button class="btn btn-primary px-4" onclick="next_btn();">Next</button></p>
+            </div>
+          </div>
+			
+         
+          
+        </div>
+        <div class="row">
+          
+        </div>
+      </div>
+    </section>
+    
+  
+
+  
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" id="contact">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">NEXT LEVEL UP</h2>
+              <p>Lashes - Lip Gloss - Hair Pins </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <li><a href="#products" class="py-2 d-block">Products</a></li>
+                <li><a href="#cart" class="py-2 d-block">My Cart</a></li>
+                <li><a href="#gallery" class="py-2 d-block">Photo Gallery</a></li>
+                <li><a href="#contact" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact Information</h2>
+              <ul class="list-unstyled">
+                
+                <li><a href="mailto:nextlevelup2020@gmail.com" class="py-2 d-block">nextlevelup2020@gmail.com</a></li>
+                <li><a href="mailto:orders@nextlevelup.store" class="py-2 d-block">orders@nextlevelup.store</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <li class="ftco-animate"><p>Follow Us on Instagram</p><a href="https://www.instagram.com/nlu_next_level_up/" target="_blank"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website Designed by by <a href="https://aboveall-media.tech/" target="_blank">Above All Media, LLC. </a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
