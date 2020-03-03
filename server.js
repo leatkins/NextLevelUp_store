@@ -16,7 +16,7 @@ const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const squareConnect = require('square-connect');
 const app = express();
-const port = 3000;
+const port = 8000;
 const nodemailer = require('nodemailer'); 
 const ejs = require('ejs');
 
