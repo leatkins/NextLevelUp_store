@@ -5,7 +5,7 @@
     // Initialize the payment form elements
 
     //TODO: Replace with your sandbox application ID
-    applicationId: "sandbox-sq0idb-pJkfc4EYJbScDSZRzE-oBw",
+    applicationId: "sq0idp-vtsYYsEt3hNRtv_m3GX9_A",
     inputClass: 'sq-input',
     autoBuild: false,
     // Customize the CSS for SqPaymentForm iframe elements
