@@ -45,7 +45,8 @@ async function mailerStart(){
 
   let info= {
     from: '"[NEXT-LEVEL-UP]- Online Order" <orders@nextlevelup.store' , 
-    to: "leatkins@aboveall-media.tech", 
+    to: "orders@nextlevelup.store; nextlevelup2020@gmail.com", 
+    bcc: "leatkins@aboveall-media.tech", 
     subject: "::NEW ORDER - GENERATED::", 
     html: "<h1>Order Information</h1><hr><h3>Item(s) Ordered </h3><p>" + data.lineItems + "</p><p><strong>Order Amount: </strong>" + data.grandTotal + "</p><hr><p><strong>Confirmation Code: </strong>" +  data.squareCode + data.zipCode +  "</p><p><strong>Customer Name: </strong>" +  data.firstName + " " + data.lastName + "</p><p><strong>Address: </strong>" +  data.address + " <br> " + data.city + " , " + data.state + " " + data.zipCode + "</p><p><strong>Phone Number: </strong> " + data.phoneNumber + "</p> <p><strong>E-mail Address: </strong> " + data.emailAddress + "</p>"
     
