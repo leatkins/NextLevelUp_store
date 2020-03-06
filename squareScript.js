@@ -88,7 +88,7 @@ alert('Payment failed to complete!\nCheck browser developer console for more det
   //TODO: paste code from step 1.1.4
 
   //TODO: paste code from step 1.1.5
-
+paymentForm.build();
   
   
 // onGetCardNonce is triggered when the "Pay $1.00" button is clicked
