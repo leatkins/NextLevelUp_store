@@ -25,13 +25,12 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
-</script>
+
 <link rel="stylesheet" type="text/css" href="mysqpaymentform.css">
   </head>
   <body onload="startServer(false);">
 <script src="checkoutScript.js"></script>
-<script src="squareScript.js"></script>
+
    <script>
 var imgCount = 1; 
 var images = []; 
@@ -459,23 +458,11 @@ function prev_btn(){
     <input id="phoneNumber" class="third" type="tel" name="phoneNumber" placeholder="Phone Number" requried><br> 
     <input id="emailAddress" class="third" type="email" name="emailAddress" placeholder="Email Address" required> 
     </div>
-<button class="button-credit-card" type="submit" id="saveTotal" onclick= "startServer(true); saveItems(); paymentForm.build();">Proceed to Checkout </button>
+<button class="button-credit-card" type="submit" id="saveTotal" onclick= "startServer(true); saveItems();">Proceed to Checkout </button>
 </form>
 
 <hr>
-<br><br><br><br><br>
-<div id="squareInerface">
 
-    <div id="form-container">
-      <div id="sq-card-number"></div>
-      <div class="third" id="sq-expiration-date"></div>
-      <div class="third" id="sq-cvv"></div>
-      <div class="third" id="sq-postal-code"></div>
-      <button id="sq-apple-pay" class="button-apple-pay"></button>
-      <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Credit/Debit Card Checkout</button>
-    </div>
-																						
-		</div>
 		</div>
 	  </section>  
     
