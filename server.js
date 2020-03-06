@@ -28,6 +28,10 @@ app.get('/order-confirm', function(req, res){
  mailerStart();
 });
 
+app.get('/start-order', function(req, res){
+  res.render('start-order');
+ });
+
 //---NODEMAILER ---
 
 async function mailerStart(){
@@ -69,9 +73,10 @@ async function mailerStart(){
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-app.post('/order-confirm', urlencodedParser, function(req ,res){
+app.post('/start-order', urlencodedParser, function(req ,res){
 console.log(req.body);
 data= req.body;
+res.render('start-order');
 });
 
 
