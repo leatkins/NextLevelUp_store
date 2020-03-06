@@ -557,8 +557,14 @@ var emailAddressV = document.getElementById('emailaddress');
   console.log("Order Details Stored: ");
   console.log(localStorage.getItem("lineItems"));
   console.log(localStorage.getItem("emailAddress"));
+  redirect(); 
 }
 
 function printPage(){ 
   window.print(); 
+}
+
+function redirect(){
+  alert("Done Shopping? --- Press OK to continue");
+  window.location.replace("/start-order");
 }
