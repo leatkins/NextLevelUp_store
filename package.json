@@ -10,7 +10,7 @@
     "ejs": "^3.0.1",
     "express": "^4.17.0",
     "node-localstorage": "^2.1.5",
-    "nodemailer": "^6.4.3",
+    "nodemailer": "^6.4.16",
     "query-string": "^6.10.1",
     "request": "^2.88.0",
     "square-connect": "2.20190814.0",
